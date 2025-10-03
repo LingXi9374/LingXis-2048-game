@@ -33,8 +33,10 @@ class MainActivity : ComponentActivity() {
         windowInsetsController.systemBarsBehavior = WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         windowInsetsController.hide(WindowInsetsCompat.Type.statusBars())
 
+        val settingsManager = SettingsManager(this)
+
         setContent {
-            ProvideLocale {
+            ProvideLocale(settingsManager) {
                 LingXis2048Theme {
                     Surface(
                         modifier = Modifier

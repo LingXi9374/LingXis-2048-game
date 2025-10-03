@@ -111,7 +111,9 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                localeManager.locale = Locale("en")
+                                val locale = Locale("en")
+                                localeManager.locale = locale
+                                settingsManager.setLocale(locale)
                                 languageDropdownExpanded = false
                             }
                             .padding(16.dp),
@@ -122,7 +124,9 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                localeManager.locale = Locale("zh", "CN")
+                                val locale = Locale("zh", "CN")
+                                localeManager.locale = locale
+                                settingsManager.setLocale(locale)
                                 languageDropdownExpanded = false
                             }
                             .padding(16.dp),
@@ -133,7 +137,9 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                localeManager.locale = Locale("zh", "HK")
+                                val locale = Locale("zh", "HK")
+                                localeManager.locale = locale
+                                settingsManager.setLocale(locale)
                                 languageDropdownExpanded = false
                             }
                             .padding(16.dp),
@@ -144,7 +150,9 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                localeManager.locale = Locale("zh", "TW")
+                                val locale = Locale("zh", "TW")
+                                localeManager.locale = locale
+                                settingsManager.setLocale(locale)
                                 languageDropdownExpanded = false
                             }
                             .padding(16.dp),
@@ -155,7 +163,9 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                localeManager.locale = Locale("ja")
+                                val locale = Locale("ja")
+                                localeManager.locale = locale
+                                settingsManager.setLocale(locale)
                                 languageDropdownExpanded = false
                             }
                             .padding(16.dp),
@@ -166,7 +176,9 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                localeManager.locale = Locale("ko")
+                                val locale = Locale("ko")
+                                localeManager.locale = locale
+                                settingsManager.setLocale(locale)
                                 languageDropdownExpanded = false
                             }
                             .padding(16.dp),

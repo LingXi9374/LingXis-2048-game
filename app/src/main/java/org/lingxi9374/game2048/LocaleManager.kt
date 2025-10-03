@@ -4,10 +4,9 @@ import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
-import java.util.Locale
 
-class LocaleManager {
-    var locale by mutableStateOf(Locale.getDefault())
+class LocaleManager(settingsManager: SettingsManager) {
+    var locale by mutableStateOf(settingsManager.getLocale())
 }
 
-val LocalLocaleManager = compositionLocalOf { LocaleManager() }
+val LocalLocaleManager = compositionLocalOf<LocaleManager> { error("LocaleManager not provided") }

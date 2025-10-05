@@ -1,5 +1,6 @@
 package org.lingxi9374.game2048.ui
 
+import android.content.Context
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -44,6 +45,7 @@ import androidx.navigation.NavController
 import org.lingxi9374.game2048.LocalLocaleManager
 import org.lingxi9374.game2048.R
 import org.lingxi9374.game2048.SettingsManager
+import org.lingxi9374.game2048.findActivity
 import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -56,6 +58,19 @@ fun SettingsScreen(navController: NavController) {
     var soundVolume by remember { mutableFloatStateOf(settingsManager.getSoundVolume()) }
     var languageDropdownExpanded by remember { mutableStateOf(false) }
     val localeManager = LocalLocaleManager.current
+
+    fun changeLocale(context: Context, language: String, country: String?) {
+        val locale = if(country == null) Locale(language) else Locale(language, country)
+        localeManager.locale = locale
+        settingsManager.setLocale(locale)
+        languageDropdownExpanded = false
+
+        // 在 Composable 中获取当前的 Activity
+        val activity = context.findActivity() // 您可能需要一个扩展函数来获取 Activity
+
+        // 在点击事件中
+        activity?.recreate()
+    }
 
     Scaffold(
         contentWindowInsets = WindowInsets(0, 0, 0, 0),
@@ -111,10 +126,7 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                val locale = Locale("en")
-                                localeManager.locale = locale
-                                settingsManager.setLocale(locale)
-                                languageDropdownExpanded = false
+                                changeLocale(context, "en", null)
                             }
                             .padding(16.dp),
                         overrideLocale = Locale("en")
@@ -124,10 +136,7 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                val locale = Locale("zh", "CN")
-                                localeManager.locale = locale
-                                settingsManager.setLocale(locale)
-                                languageDropdownExpanded = false
+                                changeLocale(context, "zh", "CN")
                             }
                             .padding(16.dp),
                         overrideLocale = Locale("zh", "CN")
@@ -137,10 +146,7 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                val locale = Locale("zh", "HK")
-                                localeManager.locale = locale
-                                settingsManager.setLocale(locale)
-                                languageDropdownExpanded = false
+                                changeLocale(context, "zh", "HK")
                             }
                             .padding(16.dp),
                         overrideLocale = Locale("zh", "HK")
@@ -150,10 +156,7 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                val locale = Locale("zh", "TW")
-                                localeManager.locale = locale
-                                settingsManager.setLocale(locale)
-                                languageDropdownExpanded = false
+                                changeLocale(context, "zh", "TW")
                             }
                             .padding(16.dp),
                         overrideLocale = Locale("zh", "TW")
@@ -163,10 +166,7 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                val locale = Locale("ja")
-                                localeManager.locale = locale
-                                settingsManager.setLocale(locale)
-                                languageDropdownExpanded = false
+                                changeLocale(context, "ja", null)
                             }
                             .padding(16.dp),
                         overrideLocale = Locale("ja")
@@ -176,10 +176,7 @@ fun SettingsScreen(navController: NavController) {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                val locale = Locale("ko")
-                                localeManager.locale = locale
-                                settingsManager.setLocale(locale)
-                                languageDropdownExpanded = false
+                                changeLocale(context, "ko", null)
                             }
                             .padding(16.dp),
                         overrideLocale = Locale("ko")

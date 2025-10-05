@@ -27,6 +27,8 @@
     <string name="history_score">Score: %1$d</string>
     <string name="history_max_tile">Max Tile: %1$d</string>
     <string name="history_time_elapsed">Time: %1$s</string>
+    <string name="history_import">Import</string>
+    <string name="history_export">Export</string>
     <string name="game_over">Game Over!</string>
     <string name="game_paused">Paused</string>
     <string name="game_new_game">New Game</string>

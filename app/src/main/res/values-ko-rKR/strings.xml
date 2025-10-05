@@ -27,6 +27,8 @@
     <string name="history_score">점수: %1$d</string>
     <string name="history_max_tile">최대 타일: %1$d</string>
     <string name="history_time_elapsed">경과 시간: %1$s</string>
+    <string name="history_import">가져오기</string>
+    <string name="history_export">내보내기</string>
     <string name="game_over">게임 종료!</string>
     <string name="game_paused">일시정지됨</string>
     <string name="game_new_game">새 게임</string>

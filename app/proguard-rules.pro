@@ -8,7 +8,7 @@
 -keep public class * extends android.content.ContentProvider
 -keep public class * extends android.app.backup.BackupAgentHelper
 -keep public class * extends android.preference.Preference
--keep public class com.android.vending.licensing.ILicensingService
+-keep public class android.vending.licensing.ILicensingService
 
 # Keep all classes that are used as views in XML layouts.
 -keep public class * extends android.view.View {
@@ -58,4 +58,4 @@
 # Keep - Serialization
 -keep class kotlinx.serialization.** { *; }
 -keepclassmembers class **$$serializer { *; }
-
+-keep @kotlinx.serialization.Serializable class * { *; }

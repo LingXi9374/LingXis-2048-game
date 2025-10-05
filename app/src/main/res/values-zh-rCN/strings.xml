@@ -27,6 +27,8 @@
     <string name="history_score">分数: %1$d</string>
     <string name="history_max_tile">最大方块: %1$d</string>
     <string name="history_time_elapsed">用时: %1$s</string>
+    <string name="history_import">导入</string>
+    <string name="history_export">导出</string>
     <string name="game_over">游戏结束!</string>
     <string name="game_paused">已暂停</string>
     <string name="game_new_game">新游戏</string>

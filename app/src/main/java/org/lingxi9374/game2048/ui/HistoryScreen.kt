@@ -25,6 +25,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -96,7 +97,7 @@ fun HistoryScreen(
                     }
                 }
                 is HistoryUiState.Success -> {
-                    Box {
+                    Box(modifier = Modifier.padding(bottom = 80.dp)) {
                         LazyColumn(
                             modifier = Modifier
                                 .fillMaxSize()
@@ -164,6 +165,26 @@ fun HistoryScreen(
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                         HybridFontText(text = state.message, color = MaterialTheme.colorScheme.error)
                     }
+                }
+            }
+            Row(
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                horizontalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Button(
+                    onClick = { historyViewModel.importHistory() },
+                    modifier = Modifier.weight(1f)
+                ) {
+                    HybridFontText(text = stringResource(id = R.string.history_import))
+                }
+                Button(
+                    onClick = { historyViewModel.exportHistory() },
+                    modifier = Modifier.weight(1f)
+                ) {
+                    HybridFontText(text = stringResource(id = R.string.history_export))
                 }
             }
         }

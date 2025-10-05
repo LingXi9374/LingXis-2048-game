@@ -27,6 +27,8 @@
     <string name="history_score">得点: %1$d</string>
     <string name="history_max_tile">最大数字駒: %1$d</string>
     <string name="history_time_elapsed">掛った時間: %1$s</string>
+    <string name="history_import">インポート</string>
+    <string name="history_export">エクスポート</string>
     <string name="game_over">遊戯終!</string>
     <string name="game_paused">貴方の為に中止中</string>
     <string name="game_new_game">もう一度遊ぼう</string>

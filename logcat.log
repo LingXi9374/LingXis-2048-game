@@ -1,0 +1,50 @@
+ adb logcat *:E | grep 'org.lingxi9374.game2048'
+10-05 19:43:14.359 27409 28281 E WindowManager: check permission error, current package is org.lingxi9374.game2048 , it is not systemApp, callers is com.hihonor.android.view.IHwWindowManager$Stub.onTransact:1487 android.os.Binder.execTransactInternal:1534 android.os.Binder.execTransact:1476 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack>
+10-05 19:43:15.402  1860  1860 E AndroidRuntime: Process: org.lingxi9374.game2048, PID: 1860
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1$1.invoke(MainActivity.kt:65)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1$1.invoke(MainActivity.kt:58)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1.invoke(MainActivity.kt:54)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1.invoke(MainActivity.kt:53)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.ui.theme.ThemeKt.LingXis2048Theme(Theme.kt:71)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1.invoke(MainActivity.kt:53)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1.invoke(MainActivity.kt:52)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.ComposeLocalProviderKt.ProvideLocale(ComposeLocalProvider.kt:18)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1.invoke(MainActivity.kt:52)
+10-05 19:43:15.402  1860  1860 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1.invoke(MainActivity.kt:51)
+10-05 19:43:15.500 27409 28832 E SWAP_AppModel: getAppScore error! pkgName:org.lingxi9374.game2048 scoreType:1
+10-05 19:43:17.148 23055 23654 E GCORE_UGMM: Error of report org.lingxi9374.game2048
+10-05 19:43:17.450 27409 28355 E WindowManager: check permission error, current package is org.lingxi9374.game2048 , it is not systemApp, callers is com.hihonor.android.view.IHwWindowManager$Stub.onTransact:1487 android.os.Binder.execTransactInternal:1534 android.os.Binder.execTransact:1476 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack>
+10-05 19:43:17.987  1994  2070 E AwareLog: AtomicFileUtils: readFileLines file not exist: AtomicFile[/data/user/0/org.lingxi9374.game2048/files/hw_cached_resid.list]
+10-05 19:43:18.025  1994  2078 E GamesAware: IsInSupportList 'org.lingxi9374.game2048' is not a game.
+10-05 19:43:18.496  1994  1994 E BlockMonitor: dispatchingThrewException  Message 3: { when=-516ms what=164 obj=org.lingxi9374.game2048 target=android.app.ActivityThread$H }
+10-05 19:43:18.502  1994  1994 E AndroidRuntime: Process: org.lingxi9374.game2048, PID: 1994
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1$1.invoke(MainActivity.kt:65)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1$1.invoke(MainActivity.kt:58)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1.invoke(MainActivity.kt:54)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1.invoke(MainActivity.kt:53)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.ui.theme.ThemeKt.LingXis2048Theme(Theme.kt:71)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1.invoke(MainActivity.kt:53)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1.invoke(MainActivity.kt:52)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.ComposeLocalProviderKt.ProvideLocale(ComposeLocalProvider.kt:18)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1.invoke(MainActivity.kt:52)
+10-05 19:43:18.502  1994  1994 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1.invoke(MainActivity.kt:51)
+10-05 19:43:18.597 27409 28832 E SWAP_AppModel: getAppScore error! pkgName:org.lingxi9374.game2048 scoreType:1
+10-05 19:43:18.622 28251 28251 E BubbleTextView : draw: mIsBadgeNeedHide is false, com.hihonor.android.launcher.BubbleTextView{3440895 VFED..CL. ........ 36,459-318,788 #9c040001}, BubbleTextView: {ShortcutInfo: title: 泠熙的2048, component: ComponentInfo{org.lingxi9374.game2048/org.lingxi9374.game2048.MainActivity}, mUnreadCount: 0}
+10-05 19:43:27.154 23055 24115 E GCORE_UGMM: Error of report org.lingxi9374.game2048
+10-05 19:43:27.402 27409 30966 E WindowManager: check permission error, current package is org.lingxi9374.game2048 , it is not systemApp, callers is com.hihonor.android.view.IHwWindowManager$Stub.onTransact:1487 android.os.Binder.execTransactInternal:1534 android.os.Binder.execTransact:1476 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack>
+10-05 19:43:27.913  2215  2286 E AwareLog: AtomicFileUtils: readFileLines file not exist: AtomicFile[/data/user/0/org.lingxi9374.game2048/files/hw_cached_resid.list]
+10-05 19:43:27.950  2215  2292 E GamesAware: IsInSupportList 'org.lingxi9374.game2048' is not a game.
+10-05 19:43:28.400  2215  2215 E BlockMonitor: dispatchingThrewException  Message 3: { when=-495ms what=164 obj=org.lingxi9374.game2048 target=android.app.ActivityThread$H }
+10-05 19:43:28.405  2215  2215 E AndroidRuntime: Process: org.lingxi9374.game2048, PID: 2215
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1$1.invoke(MainActivity.kt:65)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1$1.invoke(MainActivity.kt:58)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1.invoke(MainActivity.kt:54)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1$1.invoke(MainActivity.kt:53)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.ui.theme.ThemeKt.LingXis2048Theme(Theme.kt:71)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1.invoke(MainActivity.kt:53)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1$1.invoke(MainActivity.kt:52)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.ComposeLocalProviderKt.ProvideLocale(ComposeLocalProvider.kt:18)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1.invoke(MainActivity.kt:52)
+10-05 19:43:28.405  2215  2215 E AndroidRuntime:        at org.lingxi9374.game2048.MainActivity$onCreate$1.invoke(MainActivity.kt:51)
+10-05 19:43:28.491 27409 28832 E SWAP_AppModel: getAppScore error! pkgName:org.lingxi9374.game2048 scoreType:1
+10-05 19:43:28.522 28251 28251 E BubbleTextView : draw: mIsBadgeNeedHide is false, com.hihonor.android.launcher.BubbleTextView{3440895 VFED..CL. ........ 36,459-318,788 #9c040001}, BubbleTextView: {ShortcutInfo: title: 泠熙的2048, component: ComponentInfo{org.lingxi9374.game2048/org.lingxi9374.game2048.MainActivity}, mUnreadCount: 0}
